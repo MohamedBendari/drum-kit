@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376); /* خلفية متدرجة */
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  border: 0.4rem solid #ffffff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15); /* لون شفاف فاتح */
+  width: 80px;
+  cursor: pointer;
+}
+
+.key kbd {
+  display: block;
+  font-size: 3rem;
+  color: #ffeb3b; /* لون النص الأساسي */
+}
+
+.key .sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ff9800; /* لون النص الثانوي */
+}
+
+.key.playing {
+  transform: scale(1.1);
+  border-color: #ffeb3b;
+  box-shadow: 0 0 1rem #ffeb3b;
+}
